@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tu Viaje</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="css/hoteles.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/56fa4f962e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"   />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+    <link rel="icon" href="/logo.ico">
+</head>
+
+<body>  
+    <header>
+        <a href="index2.html" >
+            <img src="img/logo_nombre.png" alt="logo" style="width:140px;">
+        </a>
+        <h2>TU <span> VIAJE</span> </h2>
+    </header>
+
+
+ <!-- Barra de Navegación -->
+    <div class="nav-bg">    
+            
+        <input type="checkbox" id="menu-check">
+        <label id="menu" for="menu-check">
+            <span id="menu-abrir">&#9776;</span>
+            <span id="menu-cerrar">X</span>
+        </label>
+
+        <nav class="navegacion-principal contenedor">           
+                    <a href="index2.html" > <i class="fa-solid fa-house-chimney"></i> 
+                        <span ><br> HOME </span> </a>   
+                    <a href="hoteles.html" ><i class="fa-solid fa-bed"></i>
+                            <span > <br> HOTELES </span></a>
+                    <a href="paquetes.html" > <i class="fa-solid fa-suitcase"></i>
+                        <span ><br> PAQUETES</span> </a>
+                    <a href="empresa.html">   <i class="fa-solid fa-building"></i>
+                        <span> <br> EMPRESA </span></a>    
+                    <a href="contacto.html">  <i class="fa-solid fa-envelope"></i>
+                        <span > <br> CONTACTO </span></a>
+        </nav>
+    </div> <br>
+
+    <h1 class="aloja"> Encontra el mejor alojammiento para que tu estadía sea la más placentera y se ajuste a tus necesidades</h1><br>
+
+
+    <form class="reserva">
+
+        <h2 class="titform"> Reserva tu habitacón</h2>
+      
+        <div class="contform">
+          <div class="dato">
+             <label for=""> Destino </label>
+             <input type="text" placeholder="ingresa ciudad, alojamiento">
+          </div>
+
+          <div class="dato"> 
+                <label for=""> fecha llegada</label>
+                <input type="date">
+                <label for=""> fecha salida</label>
+                <input type="date"  >
+          </div> 
+
+          <div class="dato">
+                <label> cant. personas</label>
+                <input type="number" step="1" min="1" max="20">
+
+           </div>         
+            
+            <input type="submit" value="Buscar" t> 
+
+      </div><br>   
+
+    </form>    
+
+
+ <br>
+ 
+ <h2 class="titempresa animate__animated animate__zoomIn"> LAS CIUDADES MAS BUSCADAS</h2>
+ <br>
+
+    <section class="hoteles">
+        <div class="contenedor tres-columnas">
+            <article>
+                <div id="caja" >  
+                    <img src="/img/buenos aires.jpg" weight="300px" height="300px">
+                </div>
+                <h1>Buenos Aires</h1>
+                <h2> 4 noches</h2>
+                <a class="consulta" href="contacto.html">Consultar</a> <br><br>
+            </article>
+            <article>
+                <div id="caja" > 
+                    <img src="img/bariloche1.jpg" weight="300px" height="300px">
+                </div>
+                <h1>Bariloche</h1>
+                <h2> 8 noches</h2>
+                <a class="consulta" href="contacto.html">Consultar</a>
+            </article>
+            <article >    
+                <div id="caja" > 
+                    <img src="/img/carlos paz.jpg" weight="300px" height="300px">
+                </div>
+                <h1>Carlos Paz</h1>
+                <h2> 5 noches</h2>
+                <a class="consulta" href="contacto.html">Consultar</a>
+            </article>
+            <article >
+              <div id="caja" >
+                   <img src="/img/mendoza.jpg" weight="300px" height="300px">
+              </div>  
+                <h1>Mendoza</h1>
+                <h2> 8 noches</h2>
+                <a class="consulta" href="contacto.html">Consultar</a><br> <br>
+            </article>
+            <article>
+                <div id="caja" >
+                    <img src="/img/tucuman.jpg" weight="300px" height="300px">
+               </div>
+                <h1>San Miguel de Tucuman</h1>
+                <h2> 6 noches </h2>
+                <a class="consulta" href="contacto.html">Consultar</a>
+            </article>
+            <article>
+                <div id="caja" >
+                    <img src="/img/rosario.jpg " weight="300px" height="300px">
+                </div>    
+                <h1>Rosario</h1>
+                <h2>4 noches</h2>
+                <a class="consulta" href="contacto.html">Consultar</a>
+            </article>
+            <article>
+                <div id="caja" >
+                     <img src="/img/puerto iguazu.jpg" weight="300px" height="300px">
+                </div>     
+                <h1>Puerto Iguazu</h1>
+                <h2> 5 noches</h2>
+                <a class="consulta" href="contacto.html">Consultar</a>
+            </article>
+            <article>
+                <div id="caja" >
+                    <img src="img/Salta1.jpg" weight="300px" height="300px">
+                </div>    
+                <h1>Salta</h1>
+                <h2> 8 noches</h2> 
+                <a class="consulta" href="contacto.html">Consultar</a>
+            </article>
+            <article >
+                <div id="caja">
+                   <img src="img/ushuaia1.jpg" weight="300px" height="300px">
+                </div>   
+                <h1>Ushuaia</h1>
+                <h2>9 noches</h2>
+                <a class="consulta" href="contacto.html">Consultar</a>
+            </article>
+        </div>
+    </section>
+
+
+    <br><br><br>
+
+    <!-- Footer  -->
+    <footer class="footer">
+        <span>Seguinos</span> 
+        <a target="blank" href="https://www.facebook.com/" title="Facebook"> <i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+        <a target="blank" href="https://www.twiter.com/" title="Twiter"><i class="fa fa-twitter fa-2x" aria-hidden="true" ></i></a>
+        <a target="blank" href="https://www.pinterest.com/" title="Pinterest"><i class="fa fa-pinterest fa-2x"  aria-hidden="true"></i></a>
+        <a target="blank" href="https://www.instagram.com/" title="Instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        <a target="blank" href="https://www.youtube.com/" title="Youtube"><i class="fa fa-youtube fa-2x"></i></a>
+        <a target="blank" href="https://www.linkedin.com/" title="Linkedin"><i class="fa fa-linkedin-square fa-2x"></i></a>
+    </footer>
+
+</body>
+
+</html>
+
