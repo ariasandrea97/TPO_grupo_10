@@ -61,7 +61,10 @@ body{
     color: #ffffff;
 }
 
-
+.contenedor-paquetes-destino1 h3{
+    color: #210561;
+    font-size:medium;
+}
 
 .contenedor-paq { /* paquetes armados -  contenedor-paquetes-destino1 */
 	width: 100%;
@@ -182,9 +185,8 @@ body{
         gap:20px;
     }
     header h2 {
-        font-size:50px; 
-        color: #210561;
-        font-family:Georgia, 'Times New Roman', Times, serif;   
+        font-size:35px; 
+
     }
 
 }

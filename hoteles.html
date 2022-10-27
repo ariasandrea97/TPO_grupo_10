@@ -37,7 +37,7 @@
         </label>
 
         <nav class="navegacion-principal contenedor">           
-                    <a href="index2.html" > <i class="fa-solid fa-house-chimney"></i> 
+                    <a href="index.html" > <i class="fa-solid fa-house-chimney"></i> 
                         <span ><br> HOME </span> </a>   
                     <a href="hoteles.html" ><i class="fa-solid fa-bed"></i>
                             <span > <br> HOTELES </span></a>
@@ -64,25 +64,31 @@
           </div>
 
           <div class="dato"> 
-                <label for=""> fecha llegada</label>
+                <label for=""> Fecha llegada</label>
                 <input type="date">
-                <label for=""> fecha salida</label>
+                <label for=""> Fecha salida</label>
                 <input type="date"  >
           </div> 
 
           <div class="dato">
-                <label> cant. personas</label>
+                <label> Cant. personas</label>
                 <input type="number" step="1" min="1" max="20">
-
            </div>         
-            
-            <input type="submit" value="Buscar" t> 
-
+           
+            <div >
+                <input type="submit" value="Buscar" onclick="Mensaje()"> 
+            </div>
       </div><br>   
 
     </form>    
 
-
+    <script>
+        function Mensaje() {
+            alert("La busqueda no se encuentra disponible en este momento")
+            return 0;
+        }
+    </script>
+    
  <br>
  
  <h2 class="titempresa animate__animated animate__zoomIn"> LAS CIUDADES MAS BUSCADAS</h2>
@@ -94,72 +100,81 @@
                 <div id="caja" >  
                     <img src="/img/buenos aires.jpg" weight="300px" height="300px">
                 </div>
-                <h1>Buenos Aires</h1>
-                <h2> 4 noches</h2>
+                <p><h1>Hoteles en Buenos Aires</h1>
+                    <h4> 20.336 hoteles <b>Promedio $19.042 </b> </h4> <br>
+                    </p>
                 <a class="consulta" href="contacto.html">Consultar</a> <br><br>
             </article>
             <article>
                 <div id="caja" > 
                     <img src="img/bariloche1.jpg" weight="300px" height="300px">
                 </div>
-                <h1>Bariloche</h1>
-                <h2> 8 noches</h2>
+                <p><h1>Hoteles en San Carlos de Bariloche</h1>
+                <h4> 4.256 hoteles <b>Promedio $18.168 </b> </h4> <br>
+                </p>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
             <article >    
                 <div id="caja" > 
                     <img src="/img/carlos paz.jpg" weight="300px" height="300px">
                 </div>
-                <h1>Carlos Paz</h1>
-                <h2> 5 noches</h2>
+                <p><h1>Hoteles en Carlos Paz</h1>
+                    <h4> 2.746 hoteles <b>Promedio $15.190 </b> </h4> <br>
+                    </p>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
             <article >
               <div id="caja" >
                    <img src="/img/mendoza.jpg" weight="300px" height="300px">
               </div>  
-                <h1>Mendoza</h1>
-                <h2> 8 noches</h2>
+              <p><h1>Hoteles en Mendoza</h1>
+                <h4> 2.850 hoteles <b>Promedio $16.250 </b> </h4> <br>
+                </p>
                 <a class="consulta" href="contacto.html">Consultar</a><br> <br>
             </article>
             <article>
                 <div id="caja" >
                     <img src="/img/tucuman.jpg" weight="300px" height="300px">
                </div>
-                <h1>San Miguel de Tucuman</h1>
-                <h2> 6 noches </h2>
+               <p><h1>Hoteles en San Miguel de Tucumán</h1>
+                <h4> 1.357 hoteles <b>Promedio $18.620 </b> </h4> <br>
+                </p>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
             <article>
                 <div id="caja" >
                     <img src="/img/rosario.jpg " weight="300px" height="300px">
                 </div>    
-                <h1>Rosario</h1>
-                <h2>4 noches</h2>
+                <p><h1>Hoteles en Rosario</h1>
+                    <h4> 1.580 hoteles <b>Promedio $14.520 </b> </h4> <br>
+                    </p>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
             <article>
                 <div id="caja" >
                      <img src="/img/puerto iguazu.jpg" weight="300px" height="300px">
                 </div>     
-                <h1>Puerto Iguazu</h1>
-                <h2> 5 noches</h2>
+                <p><h1>Hoteles en Puerto Iguazú</h1>
+                    <h4> 1.734 hoteles <b>Promedio $11.954 </b> </h4> <br>
+                    </p>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
             <article>
                 <div id="caja" >
                     <img src="img/Salta1.jpg" weight="300px" height="300px">
                 </div>    
-                <h1>Salta</h1>
-                <h2> 8 noches</h2> 
+                <p><h1>Hoteles en Salta</h1>
+                    <h4> 1.840 hoteles <b>Promedio $19.360 </b> </h4> <br>
+                    </p> 
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
             <article >
                 <div id="caja">
                    <img src="img/ushuaia1.jpg" weight="300px" height="300px">
                 </div>   
-                <h1>Ushuaia</h1>
-                <h2>9 noches</h2>
+                <p><h1>Hoteles en Ushuaia</h1>
+                    <h4> 1.580 hoteles <b>Promedio $20.750 </b> </h4> <br>
+                    </p>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
         </div>

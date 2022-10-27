@@ -78,6 +78,7 @@ h5 {
 .nav-bg {
     background-color: var(--primario); /*white; */
     place-content: flex-start;
+    
 }
 .navegacion-principal{
      display: inline;
@@ -262,6 +263,7 @@ h5 {
     margin: 0 auto;
 
 }
+/*
 .entrada-blog a {
     display: inline-block;
     background-color: #2196F3;
@@ -272,6 +274,7 @@ h5 {
     text-transform: uppercase;
     font-size: 12px;
 }
+*/
 
 #caja:hover{
 opacity:0.7;
@@ -310,6 +313,8 @@ opacity:0.7;
 }
 .card_v h4{
     font-weight: 600;
+    font-size: 25px;
+
 }
 .card_v p{
     padding: 0 1rem;
@@ -441,6 +446,10 @@ opacity:0.7;
         font-size:20px;
 
     }
+    .imagen {
+        height: 300px;
+        width: 300px;
+    }
 
 
     /*** menu hamburguesa ********/
@@ -491,11 +500,11 @@ opacity:0.7;
             top:0;
             right:50;
             height: 100%; /*para que ocupe el 100%*/
-            background-color: #3f6081;
+            background-color: #201717;
             padding-top: 0.5em ;
             padding-right: 1.5em; /*para desplazarlo un poco*/
             opacity: 0.8;
-            color:#FFF;
+            color:rgb(255, 255, 255);
             font-size: 1.4em;
         }
 
@@ -550,7 +559,11 @@ opacity:0.7;
         left: 40%;    
     }
     header h2 {
-        font-size:50px; 
+        font-size:35px; 
+    }
+    .imagen {
+        height: 200px;
+        width: 200px;
     }
 }
 
