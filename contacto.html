@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tu Viaje</title>
+
+   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+   <link rel="stylesheet" href="css/styles2.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://kit.fontawesome.com/56fa4f962e.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"   />
+   <link rel="icon" href="/logo.ico">
+</head>
+
+<body>
+    <header>
+        <a href="index2.html" >
+            <img src="img/logo_nombre.png" alt="logo" style="width:140px;">
+        </a>
+        <h2>TU <span> VIAJE</span> </h2>
+    </header>
+
+   <!-- Barra de Navegación -->
+   <div class="nav-bg">    
+        
+        <input type="checkbox" id="menu-check">
+        <label id="menu" for="menu-check">
+            <span id="menu-abrir">&#9776;</span>
+            <span id="menu-cerrar">X</span>
+        </label>
+
+        <nav class="navegacion-principal contenedor">          
+            <a href="index2.html" >      <i class="fa-solid fa-house-chimney"></i> 
+                <span ><br> HOME </span> </a>   
+            <a href="hoteles.html" ><i class="fa-solid fa-bed"></i>
+                    <span > <br> HOTELES </span></a>
+            <a href="paquetes.html" >    <i class="fa-solid fa-suitcase"></i>
+                <span ><br> PAQUETES</span> </a>
+            <a href="empresa.html">      <i class="fa-solid fa-building"></i>
+                <span> <br> EMPRESA </span></a>    
+            <a href="contacto.html">     <i class="fa-solid fa-envelope"></i>
+                <span > <br> CONTACTO </span></a>
+        </nav>
+    </div>  
+
+
+    <!-- Formulario de Contacto  -->
+    <br><br><br>
+    <h2 class="titempresa"><a name="contacto">Contacto</a></h2>
+    <br><br>
+
+
+<div id="formulario" class="u-wrapper">
+<div class="contact-content">
+
+    <form id="form" action="https://formspree.io/f/xzbwanrz" method="POST" class="form" name="f1">
+        <fieldset>
+            <legend> Envianos tu consulta </legend>
+
+            <div class="contenedor-campos">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input class="input-text" type="text" id="nombre" name="nombre" placeholder="Nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input name="Telefono" class="input-text" type="tel" id="telefono" placeholder="Teléfono">
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input name="email" class="input-text" type="email" id="email" placeholder="Ingrese su email">
+                </div>
+        
+                <div class="campo">
+                    <label>Mensaje</label>
+                    <textarea class="input-text" id="message" name="message" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div> <!-- .contenedor-campos -->
+
+            <div class="alinear-derecha flex">
+                <input type="submit" value="Enviar" onclick="validacion()">   
+            </div>
+        </fieldset>
+    </form>
+    <a href="mailto:ariasandrea@yahoo.com" id="idform"></a>
+</div>
+</div>
+
+
+    <!-- Validacion del Formulario con JS -->
+    <script src="./contacto.js"></script>
+
+
+
+    <br><br><br><br>
+    <!-- Ubicacion  -->
+    <section>
+        <article>
+            <h2 class="titempresa">¿Donde estamos?</h2>
+            <br>
+            <h1><i class="fa-solid fa-location-dot"></i></h1>
+            <br>
+            <h3>Oficina Comercial: Av. Corrientes 1000 </h3>
+            <h4>(54) 11 1234 0000</h4>
+            <h4>info@tuviaje.com.ar</h4>
+
+            <br><br>
+            <div id="mapa">
+                <p align="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0180544939876!2d-58.38376904892619!3d-34.60370496490912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8c901cefa7%3A0x2bf1c86478d6f525!2sObelisco!5e0!3m2!1ses-419!2sar!4v1664143915595!5m2!1ses-419!2sar" width="980" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <br><br><br><br>
+    <a id="app-whatsapp" target="blanck"
+    href="https://api.whatsapp.com/send?phone=54091139416085&amp;text-hola!&nbsp;dejamé&nbsp;tu&nbsp;mensaje.">
+    <i class="fa fa-whatsapp"></i>
+    </a>
+    
+    <!-- Footer  -->
+    <footer class="footer">
+        <span>Seguinos</span> 
+        <a target="blank" href="https://www.facebook.com/" title="Facebook"> <i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+        <a target="blank" href="https://www.twiter.com/" title="Twiter"><i class="fa fa-twitter fa-2x" aria-hidden="true" ></i></a>
+        <a target="blank" href="https://www.pinterest.com/" title="Pinterest"><i class="fa fa-pinterest fa-2x"  aria-hidden="true"></i></a>
+        <a target="blank" href="https://www.instagram.com/" title="Instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        <a target="blank" href="https://www.youtube.com/" title="Youtube"><i class="fa fa-youtube fa-2x"></i></a>
+        <a target="blank" href="https://www.linkedin.com/" title="Linkedin"><i class="fa fa-linkedin-square fa-2x"></i></a>
+    </footer>
+
+</body>
+
+</html>

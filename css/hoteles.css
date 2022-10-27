@@ -1,0 +1,68 @@
+/**servicios**/
+
+.reserva{
+
+    background-image: url(/img/hotelform.jpg) ;
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow:0 5px 15px -5px #033761f3;
+    text-align:center;  
+    font-family: 'Inknut Antiqua', serif; 
+    margin-bottom: 4.5rem;
+
+
+}
+
+
+
+.titform{
+
+    font-size: 2.5rem;
+    margin:auto;
+    color: black;
+    padding-bottom: 1.5rem;
+}
+
+
+
+.aloja{
+
+    font-family: 'Hina Mincho', serif;
+    color: rgb(52, 25, 102);
+    text-align: center;
+    font-size: 4.5rem;
+    max-width: 60%;
+    margin: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
+}
+
+
+.dato{
+    background-color: #b4c9e9;
+    border-radius: 10px;
+    padding:1em;
+    display:inline-block;
+    font-family:Cambria, Cochin ;
+    text-align: center;
+    
+}
+
+
+.consulta {
+    display: inline-block;
+    align-items: center;
+    background-color: rgb(52, 25, 102);
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 8%;
+    
+
+}
+

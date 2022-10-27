@@ -1,0 +1,662 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #000000f3; /* #2b06af; */     /*background-color*/
+    --secundario:  #176dee ; /* #060d6b; */
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para Box Model **/
+    scroll-snap-type: y mandatory;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px; /* 1rem = 10px */
+    font-family: 'Krub', sans-serif;
+    background: #dbd3d3;
+    margin: auto;
+}
+
+img{
+	float:left;
+    max-width: 100%;
+}
+header{
+	height:155px;
+	background-color:#c7dcf0;
+	padding:45px 0 0 30px;
+    background-image: url(/img/fondo_header.jpg );
+    
+}
+
+/********* Nombre de Empresa  ********/
+header h2 {
+    font-size:60px; 
+    color: #210561;
+    font-family:Georgia, 'Times New Roman', Times, serif;   
+}
+header span {
+    color:#17d446;   
+}
+
+/**********  Tipografia *****************/
+h1, h3{
+    text-align: center;
+}
+h1{
+	font-size:30px;
+}
+h4 {
+    color: #176dee;
+    text-align: center;
+    font-size:20px;
+}
+/* Titulos */
+.titulos h1, h2 {
+    text-align: center; 
+}
+
+h5 {
+    text-align: center; 
+}
+
+
+/************ Navegacion Principal *****************/
+
+#menu, #menu-check{
+    display:none; /* por defecto para pantalla grande no se va a mostrar*/
+}
+
+.nav-bg {
+    background-color: var(--primario); /*white; */
+    place-content: flex-start;
+}
+.navegacion-principal{
+     display: inline;
+     display: flex;
+
+     align-items: center;
+     justify-content: space-between;
+     background-color: var(--primario); /* #fcfcfc; */
+     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);  /*sombra en la parte inferior de la barra de navegación */
+     z-index: 9000;
+}
+.navegacion-principal a {
+    display: block;
+    text-align:center;
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
+    font-size: 20px; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 20%;
+    font-weight:100;
+    padding: 1rem;
+}
+.navegacion-principal a:hover {
+    background-color: rgb(114, 191, 241);  /*var(--secundario);*/ 
+    color: black;  /* var(--blanco); */
+}
+.navegacion-principal span{
+    font-size: 15px;
+}
+.navegacion-principal h1{
+    font-size:30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none; 
+}
+.navegacion-principal i{ /* iconos */
+    color: rgb(255, 255, 255);
+  }
+
+/***** Slider ************/
+.slider-frame {
+	width: 1280px;
+    height: auto;
+	margin:0px auto 0;
+	overflow: hidden;
+}
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: slide 20s infinite alternate ease-in-out;
+}
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+.slider-frame img {
+	width: 100%;
+    height: 700px;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+.texto-encima{ /* para colocar texto sobre slider   */
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size:40px;
+    color: rgb(255, 255, 255);
+}
+.carrousel{  
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+/************** Principal Empresa.html  **********/
+.contenedor1 {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto ;
+	padding: 0px 0;
+
+	/* Grid */
+	display:grid;
+	grid-template-columns:  1fr;
+}
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+.contenedor-principal {
+	/*Grid */
+	display: grid;
+	grid-template-columns: 1fr; 
+
+}
+.card_principal {
+	border-radius: 10px;
+	min-height: 500px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+.card_principal .textos {
+	height: 100%;
+	
+	/*Flexbox*/
+	display:flex;  
+	flex-direction: column;   /* para que un elemento quede arriba de otro  */
+	justify-content: space-between;  
+}
+.textos_principal {
+    font-size:40px;
+    color: rgb(252, 252, 252);
+    font-style: italic;
+    font: bold;
+}
+
+
+/************* Destinos  ***************/
+.contenedor-destinos {
+	/*Grid */
+	display: grid;
+	grid-template-columns: repeat(5, 1fr); 
+	gap:20px;
+}
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+.card .textos {
+	height: 100%;
+	
+	/*Flexbox*/
+	display:flex;  
+	flex-direction: column;   /* para que un elemento quede arriba de otro  */
+	justify-content: space-between;  
+    color: #000000;
+    font-size:20px;
+    font-weight:bold;
+	/*grid */
+	/*display:grid; */
+	/*grid-template-rows: 1fr auto;  */ /* texto en 2 filas */
+	
+}
+.contenedor1 .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);  
+}
+
+
+
+/**************   Vuelos  **************/ 
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+
+}
+.entrada-blog a {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#caja:hover{
+opacity:0.7;
+}
+
+/************* Grid **************/
+.tres-columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+
+
+/******** Vuelos *************/
+.card_v{
+    width: 330px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: white;
+}
+.card_v:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);  
+}
+.card_v a:hover{
+    color: #ff0606;
+}
+ .card_v img{
+    width: 330px;
+    height: 220px;
+}
+.card_v h4{
+    font-weight: 600;
+}
+.card_v p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.card_v a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* boton1  paquetes  */
+.css-button-rounded--red {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #d90429;
+    background: #d90429;
+  }
+  .css-button-rounded--red:hover {
+    background: #fff;
+    color: #d90429
+  }
+
+
+  /** boton2  vuelos **/
+  .boton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 40%;
+	height: 40px;
+	background: #141414;
+	color: #fff;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+.boton span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+  .boton.cuatro::after {
+	content: "";
+	width: 1px;
+	height: 1px;
+	background: none;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transition: .3s ease-in-out all;
+	border-radius: 100px;
+	transform-origin: center;
+}
+.boton.cuatro:hover::after {
+	transform: scale(400);
+	background: #cc1010;
+}
+
+
+/********* Empresa ************/
+.titempresa {
+    color: rgb(52, 25, 102);
+    font-size: 3.5rem;
+    font-style: italic;
+    /*margin-inline: auto;   */
+}
+.descripcion {
+    font-size: 1.8rem; 
+    align-items: center;
+    flex-grow: 1;
+    text-align:justify;
+    margin: auto;
+    width: 50%;
+}
+.imagen {
+    display: flexbox;
+    align-items:center;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+}
+
+
+
+
+/****** Tamaño de tablet    *******/
+@media only screen and (max-width: 700px){
+    .tres-columnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .textos {
+        font-size:30px;
+    }
+    .contenedor-destinos {
+        /*Grid */
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .contenedor-paquetes {
+        /*Grid */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap:20px;
+    }
+
+    .slider-frame img {
+        width: 60%;
+        height: 400px;
+    }
+    .texto-encima{ /* para colocar texto sobre una imagen   */
+        font-size:20px;
+
+    }
+
+
+    /*** menu hamburguesa ********/
+        #menu-check:not(:checked)  ~ .navegacion-principal {   /* nav */
+            display:none; /*si no esta chequeado no queremos que la barra de menu se muestre*/
+            /*por defecto no esta chequeado */
+        }
+
+        #menu-check:checked  ~ .navegacion-principal {
+            display:block; 
+        }
+
+        #menu {
+            display: block; /* mostramos el menu*/
+            color: #3d75ee;  /*   #328532;  */
+            background-color: #FFF;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: 3px solid  #194dbd;;    /*   #328532;  */
+            border-radius: 0.3em;
+            position:absolute;
+            /*right:0.5em;*/
+            left:0.5em;
+            top:0.5em;
+            z-index: 9999; /*para que el boton siempre este por encima*/
+        }
+
+        #menu:hover{
+            color: #FFF;
+            background:  #010613;  /*   #328532;  */
+        }
+
+        /*para ocultar la X y que solo se muestre cuando se tenga que cerrar*/
+        #menu-cerrar{
+            display:none;
+        }
+
+        #menu-check:checked ~ label #menu-abrir{
+            display:none;
+        }
+
+        #menu-check:checked ~ label #menu-cerrar{
+            display:block;
+        }
+
+        .navegacion-principal {
+            position: absolute;
+            top:0;
+            right:50;
+            height: 100%; /*para que ocupe el 100%*/
+            background-color: #3f6081;
+            padding-top: 0.5em ;
+            padding-right: 1.5em; /*para desplazarlo un poco*/
+            opacity: 0.8;
+            color:#FFF;
+            font-size: 1.4em;
+        }
+
+        .navegacion-principal a {
+            /*los enlaces*/
+            color: #FFF;
+            text-align: right;
+        }
+        .navegacion-principal i{
+            color: rgb(255, 255, 255);
+        }
+
+        .navegacion-principal  {
+            display:block;
+            text-align: right;
+        }
+
+
+
+    /***********************************/
+
+}
+
+/********* Tamaño de celular **********/
+@media only screen and (max-width: 500px){
+    .tres-columnas {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 2rem;
+    }
+    .textos {
+        font-size:25px;
+    }
+    .contenedor-destinos {
+        /*Grid */
+        grid-template-columns: repeat(1, 1fr); /* 3 columnas de 1 fraccion) */
+
+    }
+    .contenedor-paquetes {
+        /*Grid */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap:20px;
+    }
+    .slider-frame img {
+        width: 50%;
+        height: 200px;
+    }
+    .texto-encima{ /* para colocar texto sobre una imagen   */
+        font-size:20px;
+        top: 40%;
+        left: 40%;    
+    }
+    header h2 {
+        font-size:50px; 
+    }
+}
+
+
+
+
+/********** Contacto ***********/
+.formulario {
+    background-color: #6d95bd; /*var(--gris);*/
+    width: min( 60rem, 100% ); /** Utilizar el valor más pequeño **/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.formulario fieldset {
+    border: none;
+}
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem; 
+    color: rgb(52, 25, 102);  /* color: var(--primario);*/
+}
+.form {
+    background-color: #6d95bd; /*var(--gris);*/
+    width: min( 60rem, 100% ); /** Utilizar el valor más pequeño **/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.form fieldset {
+    border: none;
+}
+.form legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem; 
+    color: rgb(52, 25, 102);  /* color: var(--primario);*/
+}
+legend {
+    box-sizing: border-box; 
+    color: inherit;   
+    display: table; 
+    max-width: 100%; 
+    padding: 0; 
+    white-space: normal;    
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+.campo textarea {
+    height: 20rem;
+}
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+.flex {
+    display: flex;
+}
+.alinear-derecha {
+    justify-content: flex-end;
+}
+
+
+/*Contacto Whatsapp*/
+#app-whatsapp{
+    position: fixed;
+    right: 10px;
+    bottom: 60px;
+    width: 60px;
+    z-index: 1;
+    font-size: 63px;
+    color: green;
+}
+
+/************ Footer **************/
+.footer {
+    text-align: center;
+}
+
+footer{
+	height: 60px;
+	background-color:#333131;
+	line-height:60px;
+	text-align:center;
+	color:rgb(242, 242, 247);
+}
+
+footer span{
+    color: rgb(255, 255, 255);   
+}
+
+footer i{
+    color:rgb(255, 255, 255);
+}
