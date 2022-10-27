@@ -55,7 +55,8 @@
 <div id="formulario" class="u-wrapper">
 <div class="contact-content">
 
-    <form id="form" action="https://formspree.io/f/xzbwanrz" method="POST" class="form" name="f1">
+<!--   <form id="form" action="https://formspree.io/f/xzbwanrz" method="POST" class="form" name="f1">  --> 
+    <form id="form" action="https://formsubmit.co/ariasandrea@yahoo.com" method="POST" class="form" name="f1">   
         <fieldset>
             <legend> Envianos tu consulta </legend>
 
@@ -82,11 +83,16 @@
             </div> <!-- .contenedor-campos -->
 
             <div class="alinear-derecha flex">
-                <input type="submit" value="Enviar" onclick="validacion()">   
+                <input type="button" value="Enviar" onclick="validacion()">   
             </div>
         </fieldset>
+
+        <input type="hidden" name="_next" value="http://127.0.0.1:5502/contacto.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
     </form>
-    <a href="mailto:ariasandrea@yahoo.com" id="idform"></a>
+
 </div>
 </div>
 
