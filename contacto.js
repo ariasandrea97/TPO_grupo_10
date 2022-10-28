@@ -47,7 +47,7 @@ function validacion()
     }
 
     //el formulario se envia
-    alert("Muchas gracias por enviar el formulario");
+    alert("Muchas gracias por enviar sus datos. En breve nos pondremos en contacto. ");
     document.f1.submit();
        
 }
