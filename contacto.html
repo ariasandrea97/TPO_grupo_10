@@ -47,8 +47,8 @@
 
 
     <!-- Formulario de Contacto  -->
-    <br><br><br>
-    <h2 class="titempresa"><a name="contacto">Contacto</a></h2>
+    <br>
+    <h1 class="title1">Contacto</h1>
     <br><br>
 
 
@@ -62,20 +62,32 @@
 
             <div class="contenedor-campos">
                 <div class="campo">
-                    <label for="nombre">Nombre</label>
+                    <label for="nombre">Nombre *</label>
                     <input class="input-text" type="text" id="nombre" name="nombre" placeholder="Nombre">
                 </div>
 
                 <div class="campo">
-                    <label for="telefono">Teléfono</label>
+                    <label for="telefono">Teléfono *</label>
                     <input name="Telefono" class="input-text" type="tel" id="telefono" placeholder="Teléfono">
                 </div>
 
                 <div class="campo">
-                    <label for="email">Email</label>
+                    <label for="email">Email *</label>
                     <input name="email" class="input-text" type="email" id="email" placeholder="Ingrese su email">
                 </div>
-        
+
+                <div class="campo">
+                    <label for="opciones">Motivo de consulta *</label>
+                    
+                    <select id="opciones" name="opciones">
+                        <option value=""> Selecciona un motivo -</option>
+                        <option value="1">Vuelos</option>
+                        <option value="2">Hoteles</option>
+                        <option value="3">Paquetes</option>
+                        <option value="3">Otro</option>
+                    </select>
+                </div>
+
                 <div class="campo">
                     <label>Mensaje</label>
                     <textarea class="input-text" id="message" name="message" id="" cols="30" rows="10"></textarea>
@@ -83,7 +95,7 @@
             </div> <!-- .contenedor-campos -->
 
             <div class="alinear-derecha flex">
-                <input type="button" value="Enviar" onclick="validacion()">   
+                <input class="boton" type="button" value="Enviar" onclick="validacion()">   
             </div>
         </fieldset>
 
@@ -107,7 +119,7 @@
     <!-- Ubicacion  -->
     <section>
         <article>
-            <h2 class="titempresa">¿Donde estamos?</h2>
+            <h1 class="title1">¿Donde estamos?</h1>
             <br>
             <h1><i class="fa-solid fa-location-dot"></i></h1>
             <br>

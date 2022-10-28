@@ -1,7 +1,7 @@
 :root {
     --blanco: #ffffff;
     --oscuro: #212121;
-    --primario: #000000f3; /* #2b06af; */     /*background-color*/
+    --primario: black;/* #0c0606f3;*/ /* #2b06af; */     /*background-color*/
     --secundario:  #176dee ; /* #060d6b; */
     --gris: #757575;
     --grisClaro: #DFE9F3;
@@ -67,7 +67,13 @@ h4 {
 h5 {
     text-align: center; 
 }
-
+.title1 {
+    font-family: "Raleway";
+    font-size: 30px;
+    font-weight: 700;
+    color: #5D4037;
+    text-align: center;
+  }
 
 /************ Navegacion Principal *****************/
 
@@ -78,7 +84,7 @@ h5 {
 .nav-bg {
     background-color: var(--primario); /*white; */
     place-content: flex-start;
-    
+
 }
 .navegacion-principal{
      display: inline;
@@ -166,6 +172,76 @@ h5 {
     text-align: center;
     font-weight: bold;
 }
+
+/******** Polaroid  *************/
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.card-container {
+	position: relative;
+	width: 120vmin;
+	height: 100vmin;
+
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    margin: auto;
+}
+
+.card_ {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: darken(white, 2%);
+	border-radius: 2px;
+	box-shadow: 2px 2px 5px rgba(#111, .35);
+	transition: transform .35s ease-out;
+	transform: translate(var(--x), var(--y)) scale(.35) rotate(var(--angle));
+	will-change: transform;
+
+}
+
+.card_:hover{
+    transform: scale(1) rotate(0deg);
+	z-index: 1;
+
+	/*	&:before {
+			opacity: 1;
+		}
+        */ 
+}
+.card_:before {
+    
+	content: "";
+	display: block;
+	width: 90%;
+	height: 80%;
+	margin: 5%;
+	background: var(--image) center center no-repeat;
+	background-size: cover;
+	box-shadow: inset 0 0 5px rgba(#222, .35);
+	border-radius: 2px;
+	filter: sepia(.2) brightness(.9) contrast(1.2);
+	transition: opacity .35s ease-out;
+	/*opacity: .5;*/
+	will-change: opacity;
+}
+
+.card_:after {
+	display: block;
+	content: var(--caption);
+	font-weight: 500;
+	color: #555;
+	font-size: 3vmin;
+	/*opacity: .75;*/
+	text-align: center;
+}
+
 
 
 
@@ -356,7 +432,7 @@ opacity:0.7;
 	justify-content: center;
 	width: 40%;
 	height: 40px;
-	background: #141414;
+	background: rgb(52, 25, 102);
 	color: #fff;
 	font-weight: 500;
 	border: none;
@@ -453,14 +529,14 @@ opacity:0.7;
 
 
     /*** menu hamburguesa ********/
-        #menu-check:not(:checked)  ~ .navegacion-principal {   /* nav */
-            display:none; /*si no esta chequeado no queremos que la barra de menu se muestre*/
-            /*por defecto no esta chequeado */
-        }
+    #menu-check:not(:checked)  ~ .navegacion-principal {   /* nav */
+        display:none; /*si no esta chequeado no queremos que la barra de menu se muestre*/
+        /*por defecto no esta chequeado */
+    }
 
-        #menu-check:checked  ~ .navegacion-principal {
-            display:block; 
-        }
+    #menu-check:checked  ~ .navegacion-principal {
+        display:block; 
+    }
 
         #menu {
             display: block; /* mostramos el menu*/

@@ -12,8 +12,7 @@ function validacion()
     }
    
     //valido el telefono
-    //valor = document.getElementById("telefono").value; 
-valor=document.f1.telefono.value
+    valor=document.f1.telefono.value
     if( isNaN(valor) ) 
     {   alert("El telefono debe ser un numero!")
         document.f1.telefono.focus()
@@ -31,12 +30,19 @@ valor=document.f1.telefono.value
         }
      
     //valido el Email
-    //valor = document.getElementById("email").value;
     valor=document.f1.email.value
     if (!(/^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail|edu)\.(?:|com|ar)+$/.test(valor)))
     {   alert("Por favor ingrese una direccion de email correcta");
         document.f1.email.focus()
 
+        return 0;
+    }
+
+    //valido opciones
+    indice = document.getElementById("opciones").selectedIndex;
+    if( indice == null || indice == 0 ) 
+    {    alert("Tenes que seleccionar un motivo!");
+        document.f1.opciones.focus()
         return 0;
     }
 

@@ -23,6 +23,24 @@ body{
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
 }
+.consulta {
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 8%;
+    text-decoration: none;
+
+    margin:auto;
+    display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 20%;
+	height: 40px;
+	background: #141414;
+	color: #fff;
+	font-weight: 500;
+}
 
 /* Los paquetes mas elegidos! */
 .card_p{
