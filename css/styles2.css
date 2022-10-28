@@ -467,8 +467,7 @@ opacity:0.7;
 .titempresa {
     color: rgb(52, 25, 102);
     font-size: 3.5rem;
-    font-style: italic;
-    /*margin-inline: auto;   */
+
 }
 .descripcion {
     font-size: 1.8rem; 
