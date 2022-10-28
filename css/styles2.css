@@ -209,11 +209,6 @@ h5 {
 .card_:hover{
     transform: scale(1) rotate(0deg);
 	z-index: 1;
-
-	/*	&:before {
-			opacity: 1;
-		}
-        */ 
 }
 .card_:before {
     
@@ -309,6 +304,7 @@ h5 {
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
+
 }
 .card .textos {
 	height: 100%;

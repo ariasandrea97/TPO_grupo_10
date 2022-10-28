@@ -50,7 +50,7 @@
         </nav>
     </div> <br>
 
-    <h1 class="aloja"> Encontra el mejor alojammiento para que tu estadía sea la más placentera y se ajuste a tus necesidades</h1><br>
+    <h1 class="aloja"> Encontra el mejor alojamiento para que tu estadía sea la más placentera y se ajuste a tus necesidades</h1><br>
 
 
     <form class="reserva">
@@ -58,10 +58,23 @@
         <h2 class="titform"> Reserva tu habitacón</h2>
       
         <div class="contform">
+          
           <div class="dato">
-             <label for=""> Destino </label>
-             <input type="text" placeholder="ingresa ciudad, alojamiento">
-          </div>
+            <label for="opciones">Destino</label>
+            
+            <select id="opciones" name="opciones">
+                <option value=""> Selecciona un destino -</option>
+                <option value="1">Buenos Aires</option>
+                <option value="2">Cordoba</option>
+                <option value="3">Mendoza</option>
+                <option value="4">Puerto Iguazú</option>
+                <option value="5">Rosario</option>
+                <option value="6">San Carlos de Bariloche</option>
+                <option value="7">Salta</option>
+                <option value="8">San Miguel de Tucuman</option>
+                <option value="9">Ushuaia</option>
+            </select>
+        </div>
 
           <div class="dato"> 
                 <label for=""> Fecha llegada</label>
@@ -76,21 +89,63 @@
            </div>         
            
             <div >
-                <input class="consulta" type="submit" value="Buscar" onclick="Mensaje()"> 
+                <input class="consulta" type="button" value="Buscar" onclick="Buscar()"> 
             </div>
       </div><br>   
 
     </form>    
 
     <script>
-        function Mensaje() {
-            alert("La busqueda no se encuentra disponible en este momento")
-            return 0;
+        function Buscar(){
+                //valido opciones
+            indice = document.getElementById("opciones").selectedIndex;
+            if( indice == 1 ) 
+            {    window.open('https://www.booking.com/searchresults.es.html?ss=Buenos+Aires&ssne=Buenos+Aires&ssne_untouched=Buenos+Aires&label=gen173nr-1FCAEoggI46AdIM1gEaAyIAQGYAQq4ARfIAQzYAQHoAQH4AQuIAgGoAgO4AtWt8JoGwAIB0gIkNDZhMzRiZGYtMTcwMS00NDM3LTllMzgtMzUzMTY2NDA3MGNk2AIG4AIB&sid=e4f52b7e5c3433ddc58c48a5fb3332c5&aid=304142&lang=es&sb=1&src_elem=sb&src=searchresults&dest_id=-979186&dest_type=city&group_adults=1&no_rooms=1&group_children=0&sb_travel_purpose=leisure', '_blank');
+               
+            }
+            if( indice == 2 ) 
+            {   
+                window.open('https://www.booking.com/searchresults.es.html?ss=C%C3%B3rdoba&ssne=C%C3%B3rdoba&ssne_untouched=C%C3%B3rdoba&label=gen173nr-1FCAEoggI46AdIM1gEaAyIAQGYAQq4ARfIAQzYAQHoAQH4AQuIAgGoAgO4AtWt8JoGwAIB0gIkNDZhMzRiZGYtMTcwMS00NDM3LTllMzgtMzUzMTY2NDA3MGNk2AIG4AIB&sid=e4f52b7e5c3433ddc58c48a5fb3332c5&aid=304142&lang=es&sb=1&src_elem=sb&src=searchresults&dest_id=-983417&dest_type=city&group_adults=1&no_rooms=1&group_children=0&sb_travel_purpose=leisure', '_blank');
+            }
+            if( indice == 3 ) 
+            {   
+                window.open('https://www.booking.com/searchresults.es.html?ss=Mendoza%2C+Provincia+de+Mendoza%2C+Argentina&ssne=C%C3%B3rdoba&ssne_untouched=C%C3%B3rdoba&label=gen173nr-1FCAEoggI46AdIM1gEaAyIAQGYAQq4ARfIAQzYAQHoAQH4AQuIAgGoAgO4AtWt8JoGwAIB0gIkNDZhMzRiZGYtMTcwMS00NDM3LTllMzgtMzUzMTY2NDA3MGNk2AIG4AIB&sid=e4f52b7e5c3433ddc58c48a5fb3332c5&aid=304142&lang=es&sb=1&src_elem=sb&src=searchresults&dest_id=-1003869&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=es&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=0bc07e4e3d280357&ac_meta=GhAwYmMwN2U0ZTNkMjgwMzU3IAAoATICZXM6B21lbmRvemFAAEoAUAA%3D&group_adults=1&no_rooms=1&group_children=0&sb_travel_purpose=leisure', '_blank');
+            }
+            if( indice == 4 ) 
+            {   
+                window.open('https://www.booking.com/searchresults.es.html?ss=Puerto+Iguaz%C3%BA%2C+Misiones%2C+Argentina&ssne=Mendoza&ssne_untouched=Mendoza&label=gen173nr-1FCAEoggI46AdIM1gEaAyIAQGYAQq4ARfIAQzYAQHoAQH4AQuIAgGoAgO4AtWt8JoGwAIB0gIkNDZhMzRiZGYtMTcwMS00NDM3LTllMzgtMzUzMTY2NDA3MGNk2AIG4AIB&sid=e4f52b7e5c3433ddc58c48a5fb3332c5&aid=304142&lang=es&sb=1&src_elem=sb&src=searchresults&dest_id=-1009196&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=es&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=341c7e711648028f&ac_meta=GhAzNDFjN2U3MTE2NDgwMjhmIAAoATICZXM6DVB1ZXJ0byBJZ3VhenVAAEoAUAA%3D&group_adults=1&no_rooms=1&group_children=0&sb_travel_purpose=leisure', '_blank');
+            }
+            if( indice == 5 ) 
+            {   
+                window.open('https://www.booking.com/searchresults.es.html?ss=Rosario%2C+Provincia+de+Santa+Fe%2C+Argentina&ssne=Puerto+Iguaz%C3%BA&ssne_untouched=Puerto+Iguaz%C3%BA&label=gen173nr-1FCAEoggI46AdIM1gEaAyIAQGYAQq4ARfIAQzYAQHoAQH4AQuIAgGoAgO4AtWt8JoGwAIB0gIkNDZhMzRiZGYtMTcwMS00NDM3LTllMzgtMzUzMTY2NDA3MGNk2AIG4AIB&sid=e4f52b7e5c3433ddc58c48a5fb3332c5&aid=304142&lang=es&sb=1&src_elem=sb&src=searchresults&dest_id=-1011058&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=es&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=909b7e9fd4ef018f&ac_meta=GhA5MDliN2U5ZmQ0ZWYwMThmIAAoATICZXM6B3Jvc2FyaW9AAEoAUAA%3D&group_adults=1&no_rooms=1&group_children=0&sb_travel_purpose=leisure', '_blank');
+            }
+            if( indice == 6 ) 
+            {   
+                window.open('https://www.booking.com/searchresults.es.html?ss=San+Carlos+de+Bariloche%2C+R%C3%ADo+Negro%2C+Argentina&ssne=Rosario&ssne_untouched=Rosario&label=gen173nr-1FCAEoggI46AdIM1gEaAyIAQGYAQq4ARfIAQzYAQHoAQH4AQuIAgGoAgO4AtWt8JoGwAIB0gIkNDZhMzRiZGYtMTcwMS00NDM3LTllMzgtMzUzMTY2NDA3MGNk2AIG4AIB&sid=e4f52b7e5c3433ddc58c48a5fb3332c5&aid=304142&lang=es&sb=1&src_elem=sb&src=searchresults&dest_id=-1012061&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=es&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=1aec7ec1990e0030&ac_meta=GhAxYWVjN2VjMTk5MGUwMDMwIAAoATICZXM6CWJhcmlsb2NoZUAASgBQAA%3D%3D&group_adults=1&no_rooms=1&group_children=0&sb_travel_purpose=leisure', '_blank');
+            }
+            if( indice == 7 ) 
+            {   
+                window.open('https://www.booking.com/searchresults.es.html?ss=Salta%2C+Provincia+de+Salta%2C+Argentina&ssne=San+Carlos+de+Bariloche&ssne_untouched=San+Carlos+de+Bariloche&label=gen173nr-1FCAEoggI46AdIM1gEaAyIAQGYAQq4ARfIAQzYAQHoAQH4AQuIAgGoAgO4AtWt8JoGwAIB0gIkNDZhMzRiZGYtMTcwMS00NDM3LTllMzgtMzUzMTY2NDA3MGNk2AIG4AIB&sid=e4f52b7e5c3433ddc58c48a5fb3332c5&aid=304142&lang=es&sb=1&src_elem=sb&src=searchresults&dest_id=-1011490&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=es&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=b81b7ee9771b0103&ac_meta=GhBiODFiN2VlOTc3MWIwMTAzIAAoATICZXM6BXNhbHRhQABKAFAA&group_adults=1&no_rooms=1&group_children=0&sb_travel_purpose=leisure', '_blank');
+            }
+            if( indice == 8 ) 
+            {   
+                window.open('https://www.booking.com/searchresults.es.html?ss=San+Miguel+de+Tucum%C3%A1n%2C+Tucum%C3%A1n%2C+Argentina&ssne=Ushuaia&ssne_untouched=Ushuaia&label=gen173nr-1FCAEoggI46AdIM1gEaAyIAQGYAQq4ARfIAQzYAQHoAQH4AQuIAgGoAgO4AtWt8JoGwAIB0gIkNDZhMzRiZGYtMTcwMS00NDM3LTllMzgtMzUzMTY2NDA3MGNk2AIG4AIB&sid=e4f52b7e5c3433ddc58c48a5fb3332c5&aid=304142&lang=es&sb=1&src_elem=sb&src=searchresults&dest_id=-1013611&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=es&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=90317fac54070192&ac_meta=GhA5MDMxN2ZhYzU0MDcwMTkyIAAoATICZXM6B1R1Y3VtYW5AAEoAUAA%3D&group_adults=1&no_rooms=1&group_children=0&sb_travel_purpose=leisure', '_blank');
+            }
+            if( indice == 9 ) 
+            {   
+                window.open('https://www.booking.com/searchresults.es.html?ss=Ushuaia%2C+Tierra+del+Fuego%2C+Argentina&ssne=San+Carlos+de+Bariloche&ssne_untouched=San+Carlos+de+Bariloche&label=gen173nr-1FCAEoggI46AdIM1gEaAyIAQGYAQq4ARfIAQzYAQHoAQH4AQuIAgGoAgO4AtWt8JoGwAIB0gIkNDZhMzRiZGYtMTcwMS00NDM3LTllMzgtMzUzMTY2NDA3MGNk2AIG4AIB&sid=e4f52b7e5c3433ddc58c48a5fb3332c5&aid=304142&lang=es&sb=1&src_elem=sb&src=searchresults&dest_id=-1018179&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=es&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=63277f584ee8003f&ac_meta=GhA2MzI3N2Y1ODRlZTgwMDNmIAAoATICZXM6BXVzaHVhQABKAFAA&group_adults=1&no_rooms=1&group_children=0&sb_travel_purpose=leisure', '_blank');
+            }
         }
     </script>
     
  <br>
  
+
+
+
+
+
+
  <h2 class="titempresa animate__animated animate__zoomIn"> LAS CIUDADES MAS BUSCADAS</h2>
  <br>
 
@@ -101,7 +156,7 @@
                     <img src="/img/buenos aires.jpg" weight="300px" height="300px">
                 </div>
                 <p><h1>Hoteles en Buenos Aires</h1>
-                    <h4> 20.336 hoteles <b>Promedio $19.042 </b> </h4> <br>
+                    <h4> 2.152 hoteles  </h4> <br>
                     </p>
                 <a class="consulta" href="contacto.html">Consultar</a> <br><br>
             </article>
@@ -110,7 +165,7 @@
                     <img src="img/bariloche1.jpg" weight="300px" height="300px">
                 </div>
                 <p><h1>Hoteles en San Carlos de Bariloche</h1>
-                <h4> 4.256 hoteles <b>Promedio $18.168 </b> </h4> <br>
+                <h4> 963 hoteles  </h4> <br>
                 </p>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
@@ -118,8 +173,8 @@
                 <div id="caja" > 
                     <img src="/img/carlos paz.jpg" weight="300px" height="300px">
                 </div>
-                <p><h1>Hoteles en Carlos Paz</h1>
-                    <h4> 2.746 hoteles <b>Promedio $15.190 </b> </h4> <br>
+                <p><h1>Hoteles en Cordoba</h1>
+                    <h4> 751 hoteles  </h4> <br>
                     </p>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
@@ -128,7 +183,7 @@
                    <img src="/img/mendoza.jpg" weight="300px" height="300px">
               </div>  
               <p><h1>Hoteles en Mendoza</h1>
-                <h4> 2.850 hoteles <b>Promedio $16.250 </b> </h4> <br>
+                <h4> 839 hoteles  </h4> <br>
                 </p>
                 <a class="consulta" href="contacto.html">Consultar</a><br> <br>
             </article>
@@ -137,7 +192,7 @@
                     <img src="/img/tucuman.jpg" weight="300px" height="300px">
                </div>
                <p><h1>Hoteles en San Miguel de Tucumán</h1>
-                <h4> 1.357 hoteles <b>Promedio $18.620 </b> </h4> <br>
+                <h4> 185 hoteles  </h4> <br>
                 </p>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
@@ -146,7 +201,7 @@
                     <img src="/img/rosario.jpg " weight="300px" height="300px">
                 </div>    
                 <p><h1>Hoteles en Rosario</h1>
-                    <h4> 1.580 hoteles <b>Promedio $14.520 </b> </h4> <br>
+                    <h4> 422 hoteles  </h4> <br>
                     </p>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
@@ -155,7 +210,7 @@
                      <img src="/img/puerto iguazu.jpg" weight="300px" height="300px">
                 </div>     
                 <p><h1>Hoteles en Puerto Iguazú</h1>
-                    <h4> 1.734 hoteles <b>Promedio $11.954 </b> </h4> <br>
+                    <h4> 364 hoteles </h4> <br>
                     </p>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
@@ -164,7 +219,7 @@
                     <img src="img/Salta1.jpg" weight="300px" height="300px">
                 </div>    
                 <p><h1>Hoteles en Salta</h1>
-                    <h4> 1.840 hoteles <b>Promedio $19.360 </b> </h4> <br>
+                    <h4> 952 hoteles </h4> <br>
                     </p> 
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
@@ -173,7 +228,7 @@
                    <img src="img/ushuaia1.jpg" weight="300px" height="300px">
                 </div>   
                 <p><h1>Hoteles en Ushuaia</h1>
-                    <h4> 1.580 hoteles <b>Promedio $20.750 </b> </h4> <br>
+                    <h4> 736 hoteles </h4> <br>
                     </p>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
