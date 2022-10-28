@@ -331,22 +331,10 @@ h5 {
 /**************   Vuelos  **************/ 
 .contenedor {
     max-width: 1200px;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
-
+ 
 }
-/*
-.entrada-blog a {
-    display: inline-block;
-    background-color: #2196F3;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 12px;
-}
-*/
 
 #caja:hover{
 opacity:0.7;
