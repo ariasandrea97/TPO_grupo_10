@@ -630,9 +630,9 @@ opacity:0.7;
 
 
 /********** Contacto ***********/
-.formulario {
-    background-color: #6d95bd; /*var(--gris);*/
-    width: min( 60rem, 100% ); /** Utilizar el valor más pequeño **/
+/*.formulario {
+    background-color: #6d95bd; 
+    width: min( 60rem, 100% ); 
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
@@ -646,8 +646,9 @@ opacity:0.7;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem; 
-    color: rgb(52, 25, 102);  /* color: var(--primario);*/
+    color: rgb(52, 25, 102);  
 }
+*/
 .form {
     background-color: #6d95bd; /*var(--gris);*/
     width: min( 60rem, 100% ); /** Utilizar el valor más pequeño **/
@@ -713,10 +714,6 @@ legend {
 }
 
 /************ Footer **************/
-.footer {
-    text-align: center;
-}
-
 footer{
 	height: 60px;
 	background-color:#333131;
