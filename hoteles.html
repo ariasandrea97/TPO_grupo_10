@@ -21,7 +21,7 @@
 <body>  
     <header>
         <a href="index2.html" >
-            <img src="img/logo_nombre.png" alt="logo" style="width:140px;">
+            <img src="img/logo_nombre.png" alt="logo" >
         </a>
         <h2>TU <span> VIAJE</span> </h2>
     </header>
@@ -50,8 +50,8 @@
         </nav>
     </div> <br>
 
+<section>
     <h1 class="aloja"> Encontra el mejor alojamiento para que tu estadía sea la más placentera y se ajuste a tus necesidades</h1><br>
-
 
     <form class="reserva">
 
@@ -59,43 +59,46 @@
       
         <div class="contform">
           
-          <div class="dato">
-            <label for="opciones">Destino</label>
-            
-            <select id="opciones" name="opciones">
-                <option value=""> Selecciona un destino -</option>
-                <option value="1">Buenos Aires</option>
-                <option value="2">Cordoba</option>
-                <option value="3">Mendoza</option>
-                <option value="4">Puerto Iguazú</option>
-                <option value="5">Rosario</option>
-                <option value="6">San Carlos de Bariloche</option>
-                <option value="7">Salta</option>
-                <option value="8">San Miguel de Tucuman</option>
-                <option value="9">Ushuaia</option>
-            </select>
-        </div>
+            <div class="dato">
+                <label for="opciones">Destino</label>
+                
+                <select id="opciones" name="opciones">
+                    <option value=""> Selecciona un destino -</option>
+                    <option value="1">Buenos Aires</option>
+                    <option value="2">Cordoba</option>
+                    <option value="3">Mendoza</option>
+                    <option value="4">Puerto Iguazú</option>
+                    <option value="5">Rosario</option>
+                    <option value="6">San Carlos de Bariloche</option>
+                    <option value="7">Salta</option>
+                    <option value="8">San Miguel de Tucuman</option>
+                    <option value="9">Ushuaia</option>
+                </select>
+            </div>
 
-        <div class="dato"> 
-                <label for=""> Fecha llegada</label>
-                <input type="date">
-        </div>
-        <div class="dato"> 
-                <label for=""> Fecha salida</label>
-                <input type="date"  >
-        </div> 
+            <div class="dato"> 
+                    <label for=""> Fecha llegada</label>
+                    <input type="date">
+            </div>
 
-        <div class="dato">
-                <label> Cant. personas</label>
-                <input type="number" step="1" min="1" max="20">
-        </div>         
-           
-        <div >
-                <input class="consulta" type="button" value="Buscar" onclick="Buscar()"> 
-        </div>
-      </div><br>   
+            <div class="dato"> 
+                    <label for=""> Fecha salida</label>
+                    <input type="date"  >
+            </div> 
 
-    </form>    
+            <div class="dato">
+                    <label> Cant. personas</label>
+                    <input type="number" step="1" min="1" max="20">
+            </div>         
+  
+            <div >
+                    <input class="consulta" type="button" value="Buscar" onclick="Buscar()"> 
+            </div>
+        </div><br>   
+
+    </form> 
+</section>
+
 
     <script>
         function Buscar(){
@@ -144,101 +147,87 @@
  
 
 
-
-
-
-
- <h2 class="titempresa animate__animated animate__zoomIn"> LAS CIUDADES MAS BUSCADAS</h2>
- <br>
-
     <section class="hoteles">
+        <h2 class="titempresa animate__animated animate__zoomIn"> LAS CIUDADES MAS BUSCADAS</h2>
+        <br>
         <div class="contenedor tres-columnas">
             <article>
                 <div id="caja" >  
                     <img src="/img/buenos aires.jpg" weight="300px" height="300px">
                 </div>
-                <p><h1>Hoteles en Buenos Aires</h1>
-                    <h4> 2.152 hoteles  </h4> <br>
-                    </p>
+                <h1>Hoteles en Buenos Aires</h1>
+                <h4> 2.152 hoteles  </h4> <br>   
                 <a class="consulta" href="contacto.html">Consultar</a> <br><br>
             </article>
             <article>
                 <div id="caja" > 
                     <img src="img/bariloche1.jpg" weight="300px" height="300px">
                 </div>
-                <p><h1>Hoteles en San Carlos de Bariloche</h1>
+                <h1>Hoteles en San Carlos de Bariloche</h1>
                 <h4> 963 hoteles  </h4> <br>
-                </p>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
             <article >    
                 <div id="caja" > 
                     <img src="/img/carlos paz.jpg" weight="300px" height="300px">
                 </div>
-                <p><h1>Hoteles en Cordoba</h1>
+                <h1>Hoteles en Cordoba</h1>
                     <h4> 751 hoteles  </h4> <br>
-                    </p>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
             <article >
               <div id="caja" >
                    <img src="/img/mendoza.jpg" weight="300px" height="300px">
               </div>  
-              <p><h1>Hoteles en Mendoza</h1>
+                <h1>Hoteles en Mendoza</h1>
                 <h4> 839 hoteles  </h4> <br>
-                </p>
                 <a class="consulta" href="contacto.html">Consultar</a><br> <br>
             </article>
             <article>
                 <div id="caja" >
                     <img src="/img/tucuman.jpg" weight="300px" height="300px">
                </div>
-               <p><h1>Hoteles en San Miguel de Tucumán</h1>
+               <h1>Hoteles en San Miguel de Tucumán</h1>
                 <h4> 185 hoteles  </h4> <br>
-                </p>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
             <article>
                 <div id="caja" >
                     <img src="/img/rosario.jpg " weight="300px" height="300px">
                 </div>    
-                <p><h1>Hoteles en Rosario</h1>
-                    <h4> 422 hoteles  </h4> <br>
-                    </p>
+                <h1>Hoteles en Rosario</h1>
+                <h4> 422 hoteles  </h4> <br>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
             <article>
                 <div id="caja" >
                      <img src="/img/puerto iguazu.jpg" weight="300px" height="300px">
                 </div>     
-                <p><h1>Hoteles en Puerto Iguazú</h1>
-                    <h4> 364 hoteles </h4> <br>
-                    </p>
+                <h1>Hoteles en Puerto Iguazú</h1>
+                <h4> 364 hoteles </h4> <br>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
             <article>
                 <div id="caja" >
                     <img src="img/Salta1.jpg" weight="300px" height="300px">
                 </div>    
-                <p><h1>Hoteles en Salta</h1>
+                <h1>Hoteles en Salta</h1>
                     <h4> 952 hoteles </h4> <br>
-                    </p> 
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
             <article >
                 <div id="caja">
                    <img src="img/ushuaia1.jpg" weight="300px" height="300px">
                 </div>   
-                <p><h1>Hoteles en Ushuaia</h1>
-                    <h4> 736 hoteles </h4> <br>
-                    </p>
+                <h1>Hoteles en Ushuaia</h1>
+                <h4> 736 hoteles </h4> <br>
                 <a class="consulta" href="contacto.html">Consultar</a>
             </article>
         </div>
     </section>
 
 
-    <br><br><br>
+    <br>
 
     <!-- Footer  -->
     <footer >

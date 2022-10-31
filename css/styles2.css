@@ -36,6 +36,9 @@ header{
     background-image: url(/img/fondo_header.jpg );
     
 }
+header img{
+    width: 140px;
+}
 
 /********* Nombre de Empresa  ********/
 header h2 {
@@ -530,7 +533,6 @@ opacity:0.7;
             border: 3px solid  #194dbd;;    /*   #328532;  */
             border-radius: 0.3em;
             position:absolute;
-            /*right:0.5em;*/
             left:0.5em;
             top:0.5em;
             z-index: 9999; /*para que el boton siempre este por encima*/
@@ -630,25 +632,7 @@ opacity:0.7;
 
 
 /********** Contacto ***********/
-/*.formulario {
-    background-color: #6d95bd; 
-    width: min( 60rem, 100% ); 
-    margin: 0 auto;
-    padding: 2rem;
-    border-radius: 1rem;
-}
-.formulario fieldset {
-    border: none;
-}
-.formulario legend {
-    text-align: center;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 2rem; 
-    color: rgb(52, 25, 102);  
-}
-*/
+
 .form {
     background-color: #6d95bd; /*var(--gris);*/
     width: min( 60rem, 100% ); /** Utilizar el valor más pequeño **/
